@@ -7,6 +7,3 @@ A simple Python console-based **Stone, Paper, Scissors** game for two players. T
 + Case-insensitive input
 + Detects the winner based on game rules
 + Handles ties and invalid entries
-
-# Technologies Used
-    Python
