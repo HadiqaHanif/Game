@@ -1,0 +1,66 @@
+<svg width="760" height="360" viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="termbg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B2E"/>
+      <stop offset="100%" stop-color="#0F0D18"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .mono { font-family: "Courier New", Courier, monospace; font-size: 19px; }
+      .prompt { fill: #34D399; }
+      .val { fill: #FDE68A; }
+      .win { fill: #F472B6; font-weight: bold; }
+      .dim { fill: #8B87A6; }
+    </style>
+  </defs>
+
+  <rect width="760" height="360" rx="18" fill="url(#termbg)" filter="url(#soft)"/>
+
+  <!-- title bar -->
+  <rect width="760" height="42" rx="18" fill="#2A2440"/>
+  <rect y="24" width="760" height="18" fill="#2A2440"/>
+  <circle cx="26" cy="21" r="7" fill="#FF5F57"/>
+  <circle cx="50" cy="21" r="7" fill="#FEBC2E"/>
+  <circle cx="74" cy="21" r="7" fill="#28C840"/>
+  <text x="380" y="27" text-anchor="middle" class="mono dim" font-size="14">python3 rps.py</text>
+
+  <!-- terminal lines, staggered fade/type-in, looping -->
+  <g class="mono">
+    <text x="24" y="90" class="dim">
+      <animate attributeName="opacity" values="0;0;1;1;1;1;0" keyTimes="0;0.02;0.08;0.6;0.75;0.95;1" dur="7s" repeatCount="indefinite"/>
+      HELLO GUYZ! SHAKE YOUR HANDS. AFTER SHAKING , Enter data:)
+    </text>
+
+    <text x="24" y="130">
+      <animate attributeName="opacity" values="0;0;1;1;1;1;0" keyTimes="0;0.10;0.18;0.6;0.75;0.95;1" dur="7s" repeatCount="indefinite"/>
+      <tspan class="prompt">user1 ENTER YOUR SHAPE: </tspan><tspan class="val">stone</tspan>
+    </text>
+
+    <text x="24" y="170">
+      <animate attributeName="opacity" values="0;0;1;1;1;1;0" keyTimes="0;0.22;0.30;0.6;0.75;0.95;1" dur="7s" repeatCount="indefinite"/>
+      <tspan class="prompt">user2 ENTER YOUR SHAPE: </tspan><tspan class="val">scissor</tspan>
+    </text>
+
+    <text x="24" y="220" font-size="24">
+      <animate attributeName="opacity" values="0;0;1;1;1;1;0" keyTimes="0;0.38;0.46;0.6;0.75;0.95;1" dur="7s" repeatCount="indefinite"/>
+      <tspan class="win">🎉 CONGRATS user1 WINS! 🎉</tspan>
+    </text>
+
+    <!-- rock crushes scissors visual -->
+    <text x="180" y="290" font-size="46" text-anchor="middle">
+      🪨
+      <animate attributeName="opacity" values="0;0;0;1;1;1;0" keyTimes="0;0.4;0.46;0.5;0.75;0.95;1" dur="7s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 0;-40 0;-40 0;-40 0;0 0" keyTimes="0;0.4;0.46;0.55;0.75;0.95;1" dur="7s" repeatCount="indefinite"/>
+    </text>
+    <text x="420" y="290" font-size="46" text-anchor="middle">
+      ✂️
+      <animate attributeName="opacity" values="0;0;0;1;1;0.15;0" keyTimes="0;0.4;0.46;0.5;0.7;0.75;1" dur="7s" repeatCount="indefinite"/>
+    </text>
+    <text x="300" y="290" font-size="30" text-anchor="middle" class="dim">
+      VS
+      <animate attributeName="opacity" values="0;0;0;1;1;1;0" keyTimes="0;0.4;0.46;0.5;0.75;0.95;1" dur="7s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
