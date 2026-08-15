@@ -16,7 +16,7 @@ elif(user1 == "paper" and user2 == "scissor"):
     print("CONGRATS user2 WINS!")
 elif(user1 == "scissor" and user2 == "paper"):
     print("CONGRATS user1 WINS! ")
-elif(user1 == "stone" and user2 == "stone" or user1 == "scissor" and user2 == "scissor" or HADIQA == "paper" and HIBBA == "paper"):
+elif(user1 == "stone" and user2 == "stone" or user1 == "scissor" and user2 == "scissor" or user1 == "paper" and user2 == "paper"):
     print("BOTH SHAPES ARE SAME! Please try again.")
 else:
     print("INVALID SYNTAX!")
