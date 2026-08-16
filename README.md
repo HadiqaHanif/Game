@@ -70,7 +70,7 @@ python3 rps.py
 ### Sample Session
 
 ```text
-HELLO GUYZ! SHAKE YOUR HANDS. AFTER SHAKING , Enter data:)
+HELLO GUYZ! SHAKE YOUR HANDS. AFTER SHAKING, Enter data:)
 user1 ENTER YOUR SHAPE: stone
 user2 ENTER YOUR SHAPE: scissor
 CONGRATS user1 WINS! 
@@ -119,4 +119,4 @@ This project is licensed under the [MIT License](./LICENSE) — free to use, cop
 **🪨 📄 ✂️  May the best shape win.**
 
 </div>
-## Author -  Hadiqa Hanif
+ Author:  Hadiqa Hanif :)
